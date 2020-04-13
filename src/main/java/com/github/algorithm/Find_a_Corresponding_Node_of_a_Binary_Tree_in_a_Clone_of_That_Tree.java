@@ -10,6 +10,7 @@ import com.github.bean.TreeNode;
 public class Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree {
 
     private int count = 0;
+    private TreeNode res;
 
     /**
      * 先序遍历到target，记住是第几个节点，从clone同样先序遍历第n个节点
@@ -23,7 +24,9 @@ public class Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree 
 
         System.out.println("test");
 
-        return null;
+        res = preOrderTarget(cloned);
+
+        return res;
     }
 
     private void preOrder(TreeNode root, TreeNode target) {
@@ -36,5 +39,14 @@ public class Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree 
 
         preOrder(root.left, target);
         preOrder(root.right, target);
+    }
+
+    /**
+     * 实现先序遍历获取第n个节点
+     * @param root
+     * @return
+     */
+    private TreeNode preOrderTarget(TreeNode root) {
+        return null;
     }
 }
