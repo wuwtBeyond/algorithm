@@ -38,7 +38,7 @@ public class test {
         t3.left = t4;
         t3.right = t5;
 
-        main.getTargetCopy(t1, null, t3);
+        System.out.println(main.getTargetCopy(t1, t1, t5).val);
 
 
     }

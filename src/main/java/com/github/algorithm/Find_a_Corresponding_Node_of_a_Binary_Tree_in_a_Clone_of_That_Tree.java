@@ -20,13 +20,27 @@ public class Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree 
      * @return
      */
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
-        preOrder(original, target);
+        // 递归终止条件
+        if (original == target || original == null) {
+            return cloned;
+        }
 
-        System.out.println("test");
+        TreeNode left = getTargetCopy(original.left, cloned.left, target);
+        // 找到就退出
+        if (left != null) {
+            return left;
+        }
 
-        res = preOrderTarget(cloned);
+        return getTargetCopy(original.right, cloned.right, target);
 
-        return res;
+//        preOrder(original, target);
+
+//        System.out.println("test");
+
+//        preOrderTarget(cloned);
+
+//        System.out.println(res.val);
+//        return res;
     }
 
     private void preOrder(TreeNode root, TreeNode target) {
@@ -46,7 +60,17 @@ public class Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree 
      * @param root
      * @return
      */
-    private TreeNode preOrderTarget(TreeNode root) {
-        return null;
+    private void preOrderTarget(TreeNode root) {
+        if (root == null) return;
+        count --;
+
+        if (count == 0) {
+            res = root;
+            return ;
+        }
+
+
+        preOrderTarget(root.left);
+        preOrderTarget(root.right);
     }
 }
