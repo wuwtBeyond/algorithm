@@ -1,9 +1,6 @@
 package com.github;
 
-import com.github.algorithm.Deepest_Leaves_Sum;
-import com.github.algorithm.Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree;
-import com.github.algorithm.Group_the_People_Given_the_Group_Size_They_Belong_To;
-import com.github.algorithm.Sum_of_Nodes_with_Even_Valued_Grandparent;
+import com.github.algorithm.*;
 import com.github.bean.TreeNode;
 
 /**
@@ -49,7 +46,12 @@ public class test {
 //        main.groupThePeople(new int[]{2,2,1,1,1,1,1,1});
 //        Deepest_Leaves_Sum main = new Deepest_Leaves_Sum();
 //        main.deepestLeavesSum(t1);
-        Sum_of_Nodes_with_Even_Valued_Grandparent main = new Sum_of_Nodes_with_Even_Valued_Grandparent();
-        main.sumEvenGrandparent(t1);
+//        Sum_of_Nodes_with_Even_Valued_Grandparent main = new Sum_of_Nodes_with_Even_Valued_Grandparent();
+//        main.sumEvenGrandparent(t1);
+
+        int[][] grid = new int[][]{{3, 0, 8, 4},{2, 4, 5, 7},{9, 2, 6, 3},{0, 3, 1, 0}};
+
+        Max_Increase_to_Keep_City_Skyline main = new Max_Increase_to_Keep_City_Skyline();
+        main.maxIncreaseKeepingSkyline(grid);
     }
 }
