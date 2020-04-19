@@ -3,6 +3,8 @@ package com.github;
 import com.github.algorithm.*;
 import com.github.bean.TreeNode;
 
+import java.util.TreeSet;
+
 /**
  * @author : wuwentao
  * @date : 2020/4/14
@@ -53,5 +55,7 @@ public class test {
 
         Max_Increase_to_Keep_City_Skyline main = new Max_Increase_to_Keep_City_Skyline();
         main.maxIncreaseKeepingSkyline(grid);
+
+        TreeSet<Integer> treeSet = new TreeSet<>();
     }
 }
