@@ -51,11 +51,14 @@ public class test {
 //        Sum_of_Nodes_with_Even_Valued_Grandparent main = new Sum_of_Nodes_with_Even_Valued_Grandparent();
 //        main.sumEvenGrandparent(t1);
 
-        int[][] grid = new int[][]{{3, 0, 8, 4},{2, 4, 5, 7},{9, 2, 6, 3},{0, 3, 1, 0}};
+//        int[][] grid = new int[][]{{3, 0, 8, 4},{2, 4, 5, 7},{9, 2, 6, 3},{0, 3, 1, 0}};
+//
+//        Max_Increase_to_Keep_City_Skyline main = new Max_Increase_to_Keep_City_Skyline();
+//        main.maxIncreaseKeepingSkyline(grid);
+//
+//        TreeSet<Integer> treeSet = new TreeSet<>();
 
-        Max_Increase_to_Keep_City_Skyline main = new Max_Increase_to_Keep_City_Skyline();
-        main.maxIncreaseKeepingSkyline(grid);
-
-        TreeSet<Integer> treeSet = new TreeSet<>();
+        Count_Number_of_Teams main = new Count_Number_of_Teams();
+        main.numTeams(new int[]{1,2,3,4});
     }
 }
