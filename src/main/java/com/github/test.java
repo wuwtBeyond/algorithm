@@ -78,7 +78,9 @@ public class test {
 
 //        Binary_Search_Tree_to_Greater_Sum_Tree main = new Binary_Search_Tree_to_Greater_Sum_Tree();
 //        main.bstToGst(t1);
-        Insert_into_a_Binary_Search_Tree main = new Insert_into_a_Binary_Search_Tree();
-        main.insertIntoBST(t1,0);
+//        Insert_into_a_Binary_Search_Tree main = new Insert_into_a_Binary_Search_Tree();
+//        main.insertIntoBST(t1,0);
+        Encode_and_Decode_TinyURL main = new Encode_and_Decode_TinyURL();
+        main.encode("https://leetcode.com/problems/design-tinyurl");
     }
 }
