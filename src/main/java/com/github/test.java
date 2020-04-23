@@ -80,7 +80,10 @@ public class test {
 //        main.bstToGst(t1);
 //        Insert_into_a_Binary_Search_Tree main = new Insert_into_a_Binary_Search_Tree();
 //        main.insertIntoBST(t1,0);
-        Encode_and_Decode_TinyURL main = new Encode_and_Decode_TinyURL();
-        main.encode("https://leetcode.com/problems/design-tinyurl");
+//        Encode_and_Decode_TinyURL main = new Encode_and_Decode_TinyURL();
+//        main.encode("https://leetcode.com/problems/design-tinyurl");
+        Maximum_Binary_Tree main = new Maximum_Binary_Tree();
+        main.constructMaximumBinaryTree(new int[]{3,2,1,6,0,5});
+
     }
 }
