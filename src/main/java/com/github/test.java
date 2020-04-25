@@ -82,8 +82,9 @@ public class test {
 //        main.insertIntoBST(t1,0);
 //        Encode_and_Decode_TinyURL main = new Encode_and_Decode_TinyURL();
 //        main.encode("https://leetcode.com/problems/design-tinyurl");
-        Maximum_Binary_Tree main = new Maximum_Binary_Tree();
-        main.constructMaximumBinaryTree(new int[]{3,2,1,6,0,5});
-
+//        Maximum_Binary_Tree main = new Maximum_Binary_Tree();
+//        main.constructMaximumBinaryTree(new int[]{3,2,1,6,0,5});
+        Sort_the_Matrix_Diagonally main = new Sort_the_Matrix_Diagonally();
+        main.diagonalSort(new int[][]{{3,3,1,1},{2,2,1,2},{1,1,1,2}});
     }
 }
