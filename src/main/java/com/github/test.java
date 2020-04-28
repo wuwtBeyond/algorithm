@@ -1,6 +1,7 @@
 package com.github;
 
 import com.github.algorithm.*;
+import com.github.bean.ListNode;
 import com.github.bean.TreeNode;
 
 import java.util.TreeSet;
@@ -84,7 +85,20 @@ public class test {
 //        main.encode("https://leetcode.com/problems/design-tinyurl");
 //        Maximum_Binary_Tree main = new Maximum_Binary_Tree();
 //        main.constructMaximumBinaryTree(new int[]{3,2,1,6,0,5});
-        Sort_the_Matrix_Diagonally main = new Sort_the_Matrix_Diagonally();
-        main.diagonalSort(new int[][]{{3,3,1,1},{2,2,1,2},{1,1,1,2}});
+//        Sort_the_Matrix_Diagonally main = new Sort_the_Matrix_Diagonally();
+//        main.diagonalSort(new int[][]{{3,3,1,1},{2,2,1,2},{1,1,1,2}});
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(0);
+        ListNode node3 = new ListNode(0);
+        ListNode node4 = new ListNode(1);
+        ListNode node5 = new ListNode(1);
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+
+        Convert_Binary_Number_in_a_Linked_List_to_Integer main = new Convert_Binary_Number_in_a_Linked_List_to_Integer();
+        main.getDecimalValue(node1);
     }
 }
