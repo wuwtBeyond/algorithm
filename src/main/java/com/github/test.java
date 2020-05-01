@@ -100,8 +100,11 @@ public class test {
 //
 //        Convert_Binary_Number_in_a_Linked_List_to_Integer main = new Convert_Binary_Number_in_a_Linked_List_to_Integer();
 //        main.getDecimalValue(node1);
-        Construct_Binary_Search_Tree_from_Preorder_Traversal main = new Construct_Binary_Search_Tree_from_Preorder_Traversal();
-        main.bstFromPreorder(new int[]{8,5,1,7,10,12});
+//        Construct_Binary_Search_Tree_from_Preorder_Traversal main = new Construct_Binary_Search_Tree_from_Preorder_Traversal();
+//        main.bstFromPreorder(new int[]{8,5,1,7,10,12});
+
+        Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram main = new Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram();
+        main.minSteps("gctcxyuluxjuxnsvmomavutrrfb" , "qijrjrhqqjxjtprybrzpyfyqtzf");
 
     }
 }
