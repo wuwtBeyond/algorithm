@@ -103,8 +103,10 @@ public class test {
 //        Construct_Binary_Search_Tree_from_Preorder_Traversal main = new Construct_Binary_Search_Tree_from_Preorder_Traversal();
 //        main.bstFromPreorder(new int[]{8,5,1,7,10,12});
 
-        Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram main = new Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram();
-        main.minSteps("gctcxyuluxjuxnsvmomavutrrfb" , "qijrjrhqqjxjtprybrzpyfyqtzf");
+//        Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram main = new Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram();
+//        main.minSteps("gctcxyuluxjuxnsvmomavutrrfb" , "qijrjrhqqjxjtprybrzpyfyqtzf");
+        Reveal_Cards_In_Increasing_Order main = new Reveal_Cards_In_Increasing_Order();
+        main.deckRevealedIncreasing(new int[]{17,13,11,2,3,5,7});
 
     }
 }
