@@ -105,8 +105,10 @@ public class test {
 
 //        Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram main = new Minimum_Number_of_Steps_to_Make_Two_Strings_Anagram();
 //        main.minSteps("gctcxyuluxjuxnsvmomavutrrfb" , "qijrjrhqqjxjtprybrzpyfyqtzf");
-        Reveal_Cards_In_Increasing_Order main = new Reveal_Cards_In_Increasing_Order();
-        main.deckRevealedIncreasing(new int[]{17,13,11,2,3,5,7});
+//        Reveal_Cards_In_Increasing_Order main = new Reveal_Cards_In_Increasing_Order();
+//        main.deckRevealedIncreasing(new int[]{17,13,11,2,3,5,7});
+        Count_Square_Submatrices_with_All_Ones main = new Count_Square_Submatrices_with_All_Ones();
+        main.countSquares(new int[][]{{0,1,1,1},{1,1,1,1},{0,1,1,1}});
 
     }
 }
