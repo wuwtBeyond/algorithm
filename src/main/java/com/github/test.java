@@ -109,7 +109,9 @@ public class test {
 //        main.deckRevealedIncreasing(new int[]{17,13,11,2,3,5,7});
 //        Count_Square_Submatrices_with_All_Ones main = new Count_Square_Submatrices_with_All_Ones();
 //        main.countSquares(new int[][]{{0,1,1,1},{1,1,1,1},{0,1,1,1}});
-        Queens_That_Can_Attack_the_King mian = new Queens_That_Can_Attack_the_King();
-        mian.queensAttacktheKing(new int[][]{{0,0},{1,1},{2,2},{3,4},{3,5},{4,4},{4,5}}, new int[]{3,3});
+//        Queens_That_Can_Attack_the_King mian = new Queens_That_Can_Attack_the_King();
+//        mian.queensAttacktheKing(new int[][]{{0,0},{1,1},{2,2},{3,4},{3,5},{4,4},{4,5}}, new int[]{3,3});
+        Reduce_Array_Size_to_The_Half main = new  Reduce_Array_Size_to_The_Half();
+        main.minSetSize(new int[]{3,3,3,3,5,5,5,2,2,7});
     }
 }
