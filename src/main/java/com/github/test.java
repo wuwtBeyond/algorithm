@@ -113,7 +113,9 @@ public class test {
 //        mian.queensAttacktheKing(new int[][]{{0,0},{1,1},{2,2},{3,4},{3,5},{4,4},{4,5}}, new int[]{3,3});
 //        Reduce_Array_Size_to_The_Half main = new  Reduce_Array_Size_to_The_Half();
 //        main.minSetSize(new int[]{3,3,3,3,5,5,5,2,2,7});
-        Find_All_Duplicates_in_an_Array main = new Find_All_Duplicates_in_an_Array();
-        main.findDuplicates(new int[]{4,3,2,7,8,2,3,1});
+//        Find_All_Duplicates_in_an_Array main = new Find_All_Duplicates_in_an_Array();
+//        main.findDuplicates(new int[]{4,3,2,7,8,2,3,1});
+        Number_of_Sub_arraysofSize_K_and_Average_Greaterthan main = new Number_of_Sub_arraysofSize_K_and_Average_Greaterthan();
+        main.numOfSubarrays(new int[]{4,2,3,2}, 1, 3);
     }
 }
