@@ -119,10 +119,10 @@ public class test {
 //        main.numOfSubarrays(new int[]{4,2,3,2}, 1, 3);
 //        Sum_of_Subarray_Minimums main = new Sum_of_Subarray_Minimums();
 //        System.out.println(main.sumSubarrayMins(new int[]{3,1,2,4}));
-        Maximum_Subarray main = new Maximum_Subarray();
-        main.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4});
-
-
+//        Maximum_Subarray main = new Maximum_Subarray();
+//        main.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4});
+        Maximum_sum_circular_subarray main = new Maximum_sum_circular_subarray();
+        System.out.println(main.maxSubarraySumCircular(new int[]{-5,-3,-5}));
 //        StockSpanner stockSpanner = new StockSpanner();
 //        System.out.println(stockSpanner.next(100));
 //        System.out.println(stockSpanner.next(80));
