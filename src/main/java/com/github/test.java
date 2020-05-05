@@ -118,16 +118,16 @@ public class test {
 //        Number_of_Sub_arraysofSize_K_and_Average_Greaterthan main = new Number_of_Sub_arraysofSize_K_and_Average_Greaterthan();
 //        main.numOfSubarrays(new int[]{4,2,3,2}, 1, 3);
         Sum_of_Subarray_Minimums main = new Sum_of_Subarray_Minimums();
-        System.out.println(main.sumSubarrayMins(new int[]{48,87,27}));
+        System.out.println(main.sumSubarrayMins(new int[]{71,55,82,55}));
 
-        StockSpanner stockSpanner = new StockSpanner();
-        System.out.println(stockSpanner.next(100));
-        System.out.println(stockSpanner.next(80));
-        System.out.println(stockSpanner.next(60));
-        System.out.println(stockSpanner.next(70));
-        System.out.println(stockSpanner.next(60));
-        System.out.println(stockSpanner.next(75));
-        System.out.println(stockSpanner.next(85));
+//        StockSpanner stockSpanner = new StockSpanner();
+//        System.out.println(stockSpanner.next(100));
+//        System.out.println(stockSpanner.next(80));
+//        System.out.println(stockSpanner.next(60));
+//        System.out.println(stockSpanner.next(70));
+//        System.out.println(stockSpanner.next(60));
+//        System.out.println(stockSpanner.next(75));
+//        System.out.println(stockSpanner.next(85));
 
     }
 }
