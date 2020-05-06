@@ -121,8 +121,8 @@ public class test {
 //        System.out.println(main.sumSubarrayMins(new int[]{3,1,2,4}));
 //        Maximum_Subarray main = new Maximum_Subarray();
 //        main.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4});
-        Maximum_sum_circular_subarray main = new Maximum_sum_circular_subarray();
-        System.out.println(main.maxSubarraySumCircular(new int[]{-5,-3,-5}));
+//        Maximum_sum_circular_subarray main = new Maximum_sum_circular_subarray();
+//        System.out.println(main.maxSubarraySumCircular(new int[]{-5,-3,-5}));
 //        StockSpanner stockSpanner = new StockSpanner();
 //        System.out.println(stockSpanner.next(100));
 //        System.out.println(stockSpanner.next(80));
@@ -131,6 +131,8 @@ public class test {
 //        System.out.println(stockSpanner.next(60));
 //        System.out.println(stockSpanner.next(75));
 //        System.out.println(stockSpanner.next(85));
+        N_RepeatedElementinSize2N_Array main = new N_RepeatedElementinSize2N_Array();
+        main.repeatedNTimes(new int[]{2,1,2,5,3,2});
 
     }
 }
