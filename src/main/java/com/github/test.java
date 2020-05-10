@@ -133,7 +133,9 @@ public class test {
 //        System.out.println(stockSpanner.next(85));
 //        N_RepeatedElementinSize2N_Array main = new N_RepeatedElementinSize2N_Array();
 //        main.repeatedNTimes(new int[]{2,1,2,5,3,2});
-        Flip_Columns_For_Maximum_Number_of_EqualRows main = new Flip_Columns_For_Maximum_Number_of_EqualRows();
-        main.maxEqualRowsAfterFlips(new int [][]{{0,0,0},{0,0,1},{1,1,0}});
+//        Flip_Columns_For_Maximum_Number_of_EqualRows main = new Flip_Columns_For_Maximum_Number_of_EqualRows();
+//        main.maxEqualRowsAfterFlips(new int [][]{{0,0,0},{0,0,1},{1,1,0}});
+        Sort_Characters_By_Frequency main = new Sort_Characters_By_Frequency();
+        main.frequencySort("cccaaa");
     }
 }
