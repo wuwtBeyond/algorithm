@@ -136,6 +136,8 @@ public class test {
 //        Flip_Columns_For_Maximum_Number_of_EqualRows main = new Flip_Columns_For_Maximum_Number_of_EqualRows();
 //        main.maxEqualRowsAfterFlips(new int [][]{{0,0,0},{0,0,1},{1,1,0}});
         Sort_Characters_By_Frequency main = new Sort_Characters_By_Frequency();
-        main.frequencySort("cccaaa");
+        main.frequencySort("cccaaaas");
+//        Top_K_Frequent_Elements main = new Top_K_Frequent_Elements();
+//        main.topKFrequent(new int[]{1,100,1,100,2}, 2);
     }
 }
