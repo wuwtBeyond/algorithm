@@ -2,10 +2,13 @@ package com.github;
 
 import com.github.algorithm.*;
 import com.github.algorithm.map.Most_Frequent_Subtree_Sum;
+import com.github.algorithm.map.ReplaceWords;
 import com.github.algorithm.map.Top_K_Frequent_Words;
 import com.github.bean.ListNode;
 import com.github.bean.TreeNode;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeSet;
 
 /**
@@ -143,7 +146,14 @@ public class test {
 //        main.topKFrequent(new int[]{1,100,1,100,2}, 2);
 //        Top_K_Frequent_Words main = new Top_K_Frequent_Words();
 //        main.topKFrequent(new String[]{"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"}, 4);
-        Most_Frequent_Subtree_Sum main = new Most_Frequent_Subtree_Sum();
-        main.findFrequentTreeSum(t1);
+//        Most_Frequent_Subtree_Sum main = new Most_Frequent_Subtree_Sum();
+//        main.findFrequentTreeSum(t1);
+        ReplaceWords main = new ReplaceWords();
+        List<String> list = new ArrayList<>();
+
+        list.add("cat");
+        list.add("bat");
+        list.add("rat");
+        main.replaceWords(list, "the cattle was rattled by the battery");
     }
 }
