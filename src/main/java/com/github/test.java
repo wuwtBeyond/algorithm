@@ -1,6 +1,7 @@
 package com.github;
 
 import com.github.algorithm.*;
+import com.github.algorithm.map.Most_Frequent_Subtree_Sum;
 import com.github.algorithm.map.Top_K_Frequent_Words;
 import com.github.bean.ListNode;
 import com.github.bean.TreeNode;
@@ -30,17 +31,17 @@ public class test {
     public static void main(String[] args) {
 //        Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree main = new Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree();
 //
-        TreeNode t1 = new TreeNode(4);
+        TreeNode t1 = new TreeNode(5);
         TreeNode t2 = new TreeNode(2);
-        TreeNode t3 = new TreeNode(7);
+        TreeNode t3 = new TreeNode(-5);
         t1.left = t2;
         t1.right = t3;
 
-        TreeNode t4 = new TreeNode(1);
-        TreeNode t5 = new TreeNode(3);
-
-        t2.left = t4;
-        t2.right = t5;
+//        TreeNode t4 = new TreeNode(1);
+//        TreeNode t5 = new TreeNode(3);
+//
+//        t2.left = t4;
+//        t2.right = t5;
 
 //        TreeNode t6 = new TreeNode(5);
 //        TreeNode t7 = new TreeNode(7);
@@ -140,7 +141,9 @@ public class test {
 //        main.frequencySort("cccaaaas");
 //        Top_K_Frequent_Elements main = new Top_K_Frequent_Elements();
 //        main.topKFrequent(new int[]{1,100,1,100,2}, 2);
-        Top_K_Frequent_Words main = new Top_K_Frequent_Words();
-        main.topKFrequent(new String[]{"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"}, 4);
+//        Top_K_Frequent_Words main = new Top_K_Frequent_Words();
+//        main.topKFrequent(new String[]{"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"}, 4);
+        Most_Frequent_Subtree_Sum main = new Most_Frequent_Subtree_Sum();
+        main.findFrequentTreeSum(t1);
     }
 }
