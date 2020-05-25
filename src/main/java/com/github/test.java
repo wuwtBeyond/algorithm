@@ -1,6 +1,7 @@
 package com.github;
 
 import com.github.algorithm.*;
+import com.github.algorithm.array.TwoSum;
 import com.github.algorithm.linkedlist.CopyListwithRandomPointer;
 import com.github.algorithm.map.Longest_String_Chain;
 import com.github.algorithm.map.Most_Frequent_Subtree_Sum;
@@ -160,34 +161,35 @@ public class test {
 //        main.replaceWords(list, "the cattle was rattled by the battery");
 //        Longest_String_Chain main = new Longest_String_Chain();
 //        main.longestStrChain(new String[]{"a","b","ba","bca","bda","bdca"});
-        CopyListwithRandomPointer main = new CopyListwithRandomPointer();
-        Node p1 = new Node(7);
-        Node p2 = new Node(13);
-        Node p3 = new Node(11);
-        Node p4 = new Node(10);
-        Node p5 = new Node(1);
-
-        p1.next = p2;
-        p2.next = p3;
-        p3.next = p4;
-        p4.next = p5;
-
-        p1.random = null;
-        p2.random = p1;
-        p3.random = p5;
-        p4.random = p3;
-        p5.random = p1;
-
-        Node p = main.copyRandomList(p1);
-        while (p != null) {
-            System.out.println(p.val);
-            if (p.random != null) {
-                System.out.println(p.random.val);
-            }else {
-                System.out.println("null");
-            }
-            p = p.next;
-        }
-
+//        CopyListwithRandomPointer main = new CopyListwithRandomPointer();
+//        Node p1 = new Node(7);
+//        Node p2 = new Node(13);
+//        Node p3 = new Node(11);
+//        Node p4 = new Node(10);
+//        Node p5 = new Node(1);
+//
+//        p1.next = p2;
+//        p2.next = p3;
+//        p3.next = p4;
+//        p4.next = p5;
+//
+//        p1.random = null;
+//        p2.random = p1;
+//        p3.random = p5;
+//        p4.random = p3;
+//        p5.random = p1;
+//
+//        Node p = main.copyRandomList(p1);
+//        while (p != null) {
+//            System.out.println(p.val);
+//            if (p.random != null) {
+//                System.out.println(p.random.val);
+//            }else {
+//                System.out.println("null");
+//            }
+//            p = p.next;
+//        }
+        TwoSum main = new TwoSum();
+        main.twoSum(new int[]{2,7,11,15}, 9);
     }
 }
