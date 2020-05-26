@@ -1,6 +1,7 @@
 package com.github;
 
 import com.github.algorithm.*;
+import com.github.algorithm.array.BestTimetoBuyandSellStock;
 import com.github.algorithm.array.MaximumSubarray;
 import com.github.algorithm.array.Sum3;
 import com.github.algorithm.array.TwoSum;
@@ -195,7 +196,9 @@ public class test {
 //        main.twoSum(new int[]{2,7,11,15}, 9);
 //        Sum3 main = new Sum3();
 //        main.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
-        MaximumSubarray main = new MaximumSubarray();
-        main.maxSubArray(new int[]{-2,-3,-1});
+//        MaximumSubarray main = new MaximumSubarray();
+//        main.maxSubArray(new int[]{-2,-3,-1});
+        BestTimetoBuyandSellStock main = new BestTimetoBuyandSellStock();
+        main.maxProfit(new int[]{7,6,4,3,1});
     }
 }
