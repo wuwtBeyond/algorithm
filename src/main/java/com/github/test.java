@@ -1,6 +1,7 @@
 package com.github;
 
 import com.github.algorithm.*;
+import com.github.algorithm.array.Sum3;
 import com.github.algorithm.array.TwoSum;
 import com.github.algorithm.linkedlist.CopyListwithRandomPointer;
 import com.github.algorithm.map.Longest_String_Chain;
@@ -189,7 +190,9 @@ public class test {
 //            }
 //            p = p.next;
 //        }
-        TwoSum main = new TwoSum();
-        main.twoSum(new int[]{2,7,11,15}, 9);
+//        TwoSum main = new TwoSum();
+//        main.twoSum(new int[]{2,7,11,15}, 9);
+        Sum3 main = new Sum3();
+        main.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
     }
 }
