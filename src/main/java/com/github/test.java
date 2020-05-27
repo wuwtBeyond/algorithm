@@ -1,10 +1,7 @@
 package com.github;
 
 import com.github.algorithm.*;
-import com.github.algorithm.array.BestTimetoBuyandSellStock;
-import com.github.algorithm.array.MaximumSubarray;
-import com.github.algorithm.array.Sum3;
-import com.github.algorithm.array.TwoSum;
+import com.github.algorithm.array.*;
 import com.github.algorithm.linkedlist.CopyListwithRandomPointer;
 import com.github.algorithm.map.Longest_String_Chain;
 import com.github.algorithm.map.Most_Frequent_Subtree_Sum;
@@ -198,7 +195,9 @@ public class test {
 //        main.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
 //        MaximumSubarray main = new MaximumSubarray();
 //        main.maxSubArray(new int[]{-2,-3,-1});
-        BestTimetoBuyandSellStock main = new BestTimetoBuyandSellStock();
-        main.maxProfit(new int[]{7,6,4,3,1});
+//        BestTimetoBuyandSellStock main = new BestTimetoBuyandSellStock();
+//        main.maxProfit(new int[]{7,6,4,3,1});
+        BestTimetoBuyandSellStockII main = new BestTimetoBuyandSellStockII();
+        main.maxProfit(new int[]{7,1,5,3,6,4});
     }
 }
