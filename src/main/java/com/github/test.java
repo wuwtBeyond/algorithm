@@ -197,7 +197,9 @@ public class test {
 //        main.maxSubArray(new int[]{-2,-3,-1});
 //        BestTimetoBuyandSellStock main = new BestTimetoBuyandSellStock();
 //        main.maxProfit(new int[]{7,6,4,3,1});
-        BestTimetoBuyandSellStockII main = new BestTimetoBuyandSellStockII();
-        main.maxProfit(new int[]{7,1,5,3,6,4});
+//        BestTimetoBuyandSellStockII main = new BestTimetoBuyandSellStockII();
+//        main.maxProfit(new int[]{7,1,5,3,6,4});
+        ContainerWithMostWater main = new ContainerWithMostWater();
+        main.maxArea(new int[]{1,8,6,2,5,4,8,3,7});
     }
 }
