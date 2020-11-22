@@ -19,7 +19,7 @@ public class Sort_the_Matrix_Diagonally {
     public int[][] diagonalSort(int[][] mat) {
         if (mat == null || mat.length <= 1) return mat;
 
-//        Queue<Integer> queue = new PriorityQueue((Comparator<Integer>) (o1, o2) -> {
+//        CQueue<Integer> queue = new PriorityQueue((Comparator<Integer>) (o1, o2) -> {
 //            if (o1 < o2) {
 //                return -1;
 //            }else if (o1 == o2){

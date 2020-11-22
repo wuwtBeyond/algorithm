@@ -21,7 +21,7 @@ public class Top_K_Frequent_Elements {
 //            map.put(num, map.getOrDefault(num, 0)+1);
 //        }
 //
-//        Queue<Map.Entry<Integer, Integer>> queue = new PriorityQueue<>(new Comparator<Map.Entry<Integer, Integer>>() {
+//        CQueue<Map.Entry<Integer, Integer>> queue = new PriorityQueue<>(new Comparator<Map.Entry<Integer, Integer>>() {
 //            @Override
 //            public int compare(Map.Entry<Integer, Integer> o1, Map.Entry<Integer, Integer> o2) {
 //                return o2.getValue()-o1.getValue();
