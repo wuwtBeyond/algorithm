@@ -25,14 +25,13 @@ public class Permute {
 
         for (int i = 0;i < length;i ++) {
             if (!used[i]) {
-                path.add(i);
+                path.add(nums[i]);
                 used[i] = true;
                 dfs(nums, depth+1, length, used, path, res);
                 path.removeLast();
                 used[i] = false;
             }
         }
-
     }
 
     public static void main(String[] args) {
