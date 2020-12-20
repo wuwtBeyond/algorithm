@@ -4,20 +4,27 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Permute {
+
+    /**
+     * 没有重复数字
+     * @param nums
+     * @return
+     */
     public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new LinkedList<>();
         if (nums == null || nums.length <= 0) {
             return new LinkedList<>();
         }
 
         int length = nums.length;
-        List<List<Integer>> res = new LinkedList<>();
+        LinkedList<Integer> path = new LinkedList<>();
         boolean[] used = new boolean[length];
-        dfs(nums, 0, length, used, new LinkedList<Integer>(), res);
+        dfs(nums, 0, length, path, used, res);
 
         return res;
     }
 
-    private void dfs(int[] nums, int depth, int length, boolean[] used, LinkedList<Integer> path, List<List<Integer>> res) {
+    private void dfs(int[] nums, int depth, int length, LinkedList<Integer> path, boolean[] used, List<List<Integer>> res) {
         if (depth == length) {
             res.add(new LinkedList<>(path));
             return;
@@ -25,11 +32,11 @@ public class Permute {
 
         for (int i = 0;i < length;i ++) {
             if (!used[i]) {
-                path.add(nums[i]);
+                path.addLast(nums[i]);
                 used[i] = true;
-                dfs(nums, depth+1, length, used, path, res);
-                path.removeLast();
+                dfs(nums, depth+1, length, path, used, res);
                 used[i] = false;
+                path.removeLast();
             }
         }
     }
