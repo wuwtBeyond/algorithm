@@ -9,25 +9,19 @@ import java.util.Map;
  */
 public class TwoSum {
 
-    /**
-     * 题意说明有且仅有一个答案，则用map key存放值， value存放下标，匹配成功返回即可
-     * @param nums
-     * @param target
-     * @return
-     */
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
-
-        int[] res = new int[2];
-        for (int i = 0;i < nums.length;i ++) {
-            if (map.containsKey(target-nums[i])) {
-                res[0] = map.get(target-nums[i]);
+        Map<Integer, Integer> mapping = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (!mapping.containsKey(target-nums[i])) {
+                mapping.put(nums[i], i);
+            } else {
+                int[] res = new int[2];
+                res[0] = mapping.get(target-nums[i]);
                 res[1] = i;
                 return res;
             }
-            map.put(nums[i], i);
         }
 
-        return res;
+        return null;
     }
 }
