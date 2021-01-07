@@ -2,7 +2,6 @@ package com.github.algorithm.tree;
 
 import com.github.bean.TreeNode;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -10,30 +9,31 @@ import java.util.Queue;
 public class LevelOrder {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> ret = new ArrayList<List<Integer>>();
-        if (root == null) {
-            return ret;
+        List<List<Integer>> res = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        if (root != null) {
+            queue.add(root);
         }
-
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
-        queue.offer(root);
+        queue.add(root);
         while (!queue.isEmpty()) {
-            List<Integer> level = new ArrayList<Integer>();
-            int currentLevelSize = queue.size();
-            for (int i = 1; i <= currentLevelSize; ++i) {
+            int size = queue.size();
+            List<Integer> level = new LinkedList<>();
+            while (size-- > 0) {
                 TreeNode node = queue.poll();
-                level.add(node.val);
-                if (node.left != null) {
-                    queue.offer(node.left);
-                }
-                if (node.right != null) {
-                    queue.offer(node.right);
+                if (node != null) {
+                    level.add(node.val);
+                    if (node.left != null) {
+                        queue.add(node.left);
+                    }
+                    if (node.right != null) {
+                        queue.add(node.right);
+                    }
                 }
             }
-            ret.add(level);
+            res.add(level);
         }
 
-        return ret;
+        return res;
     }
 
 }
