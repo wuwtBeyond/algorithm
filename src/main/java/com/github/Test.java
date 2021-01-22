@@ -1,70 +1,78 @@
 package com.github;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * @author : wuwentao
  * @date : 2020/4/14
  */
 public class Test {
+    List<Integer> pre;
+    List<Integer> in;
+    List<Integer> post;
 
     public static void main(String[] args) {
-        int[] nums = new int[]{3,2,1,4,7,6,8,5};
-        Test test = new Test();
-        test.quickSort(nums);
-        for (int num : nums) {
-            System.out.println(num);
-        }
+
     }
 
-    public void quickSort(int[] nums) {
-        if (nums == null || nums.length <= 0) {
+    public int[][] threeOrders (TreeNode root) {
+        pre = new LinkedList<>();
+        in = new LinkedList<>();
+        post = new LinkedList<>();
+
+        preOrderTraversal(root);
+        inOrderTraversal(root);
+        postOrderTraversal(root);
+
+        int[][] result = new int[3][pre.size()];
+        int i = 0;
+        for (Integer val : pre) {
+            result[0][i++] = val;
+        }
+        i = 0;
+        for (Integer val : in) {
+            result[1][i++] = val;
+        }
+        i = 0;
+        for (Integer val : post) {
+            result[2][i++] = val;
+        }
+
+        return result;
+    }
+
+    private void postOrderTraversal(TreeNode root) {
+        if (root == null) {
             return;
         }
-        int len = nums.length;
-        quickSort(nums, 0, len-1);
+        preOrderTraversal(root.left);
+        preOrderTraversal(root.right);
+        post.add(root.val);
     }
 
-    private void quickSort(int[] nums, int left, int right) {
-        if (left >= right) {
+    private void inOrderTraversal(TreeNode root) {
+        if (root == null) {
             return;
         }
-        int mid = partition(nums, left, right);
-        quickSort(nums, left, mid);
-        quickSort(nums, mid+1, right);
+        preOrderTraversal(root.left);
+        in.add(root.val);
+        preOrderTraversal(root.right);
     }
 
-    /**
-     * 按nums[left]划分
-     * @param nums
-     * @param left
-     * @param right
-     * @return
-     */
-    private int partition(int[] nums, int left, int right) {
-        while (left < right) {
-            while (left < right && nums[right] >= nums[left]) {
-                right --;
-            }
-            if (left < right) {
-                swap(nums, left, right);
-                right --;
-                left ++;
-            }
-            while (left < right && nums[left] <= nums[right]) {
-                left ++;
-            }
-            if (left < right) {
-                swap(nums, left, right);
-                right --;
-                left ++;
-            }
+    private void preOrderTraversal(TreeNode root) {
+        if (root == null) {
+            return;
         }
-
-        return left;
+        pre.add(root.val);
+        preOrderTraversal(root.left);
+        preOrderTraversal(root.right);
     }
 
-    private void swap(int[] nums, int left, int right) {
-        int temp = nums[left];
-        nums[left] = nums[right];
-        nums[right] = temp;
+    private class TreeNode {
+        int val = 0;
+        TreeNode left = null;
+        TreeNode right = null;
     }
+
 }
