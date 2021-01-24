@@ -1,4 +1,4 @@
-package com.github.algorithm;
+package com.github.algorithm.str;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;

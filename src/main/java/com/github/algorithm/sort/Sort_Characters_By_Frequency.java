@@ -1,4 +1,4 @@
-package com.github.algorithm;
+package com.github.algorithm.sort;
 
 import java.lang.reflect.Array;
 import java.util.*;

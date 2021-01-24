@@ -1,4 +1,4 @@
-package com.github.algorithm;
+package com.github.algorithm.array;
 
 import com.github.bean.TreeNode;
 

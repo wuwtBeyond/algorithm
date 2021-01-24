@@ -1,4 +1,4 @@
-package com.github.algorithm;
+package com.github.algorithm.array;
 
 import java.util.HashSet;
 import java.util.Set;

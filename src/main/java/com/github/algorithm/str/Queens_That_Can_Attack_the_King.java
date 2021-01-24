@@ -1,4 +1,4 @@
-package com.github.algorithm;
+package com.github.algorithm.str;
 
 import java.util.ArrayList;
 import java.util.HashMap;
