@@ -1,12 +1,18 @@
 package com.github.algorithm.tree;
 
 
+import com.github.bean.TreeNode;
+
 import java.util.LinkedList;
 import java.util.List;
 
 public class Postorder {
 
     List<Integer> path;
+
+    public List<Integer> postorderTraversal(TreeNode root) {
+        return null;
+    }
 
     public List<Integer> postorder(Node root) {
         path = new LinkedList<>();
