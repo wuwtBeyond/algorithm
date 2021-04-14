@@ -4,41 +4,50 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FractionToDecimal {
+
+    /**
+     * 负数 循环 0
+     * @param numerator
+     * @param denominator
+     * @return
+     */
     public String fractionToDecimal(int numerator, int denominator) {
         if (numerator == 0) {
             return "0";
         }
-        StringBuilder fraction = new StringBuilder();
-        // If either one is negative (not both)
-        if (numerator < 0 ^ denominator < 0) {
-            fraction.append("-");
+        StringBuilder sb = new StringBuilder();
+        if (numerator > 0 ^ denominator > 0) {
+            sb.append("-");
         }
-        // Convert to Long or else abs(-2147483648) overflows
-        long dividend = Math.abs(Long.valueOf(numerator));
-        long divisor = Math.abs(Long.valueOf(denominator));
-        fraction.append(String.valueOf(dividend / divisor));
-        long remainder = dividend % divisor;
-        if (remainder == 0) {
-            return fraction.toString();
-        }
-        fraction.append(".");
+        long n = Math.abs(Long.valueOf(numerator));
+        long d = Math.abs(Long.valueOf(denominator));
+        // a 商 b 余数
+        long a = 0, b = 0;
+        // key 被除数  value 在sb中的位置
         Map<Long, Integer> map = new HashMap<>();
-        while (remainder != 0) {
-            if (map.containsKey(remainder)) {
-                fraction.insert(map.get(remainder), "(");
-                fraction.append(")");
+        a = n / d;
+        b = n % d;
+        if (b == 0) {
+            return sb.append(a).toString();
+        }
+        sb.append(a).append(".");
+        while (b != 0) {
+            if (map.containsKey(b)) {
+                sb.insert(map.get(b), "(");
+                sb.append(")");
                 break;
             }
-            map.put(remainder, fraction.length());
-            remainder *= 10;
-            fraction.append(String.valueOf(remainder / divisor));
-            remainder %= divisor;
+            map.put(b, sb.length());
+            b *= 10;
+            sb.append(b/d);
+            b %= d;
         }
-        return fraction.toString();
+
+        return sb.toString();
     }
 
     public static void main(String[] args) {
         FractionToDecimal main = new FractionToDecimal();
-        main.fractionToDecimal(-4, 333);
+        System.out.println(main.fractionToDecimal(7, -12));
     }
 }
